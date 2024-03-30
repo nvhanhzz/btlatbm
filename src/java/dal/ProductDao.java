@@ -30,4 +30,9 @@ public class ProductDao implements Dao<Product> {
     public void delete(Product product) {
 
     }
+
+    @Override
+    public List<Product> getList() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
