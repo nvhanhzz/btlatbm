@@ -30,4 +30,9 @@ public class OrderDetailDao implements Dao<OrderDetail> {
     public void delete(OrderDetail orderDetail) {
 
     }
+
+    @Override
+    public List<OrderDetail> getList() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

@@ -30,17 +30,7 @@ public class UserDao implements Dao<User>{
 
     @Override
     public void save(User user) {
-        try {
-            Connection connection=Connector.createConnection();
-            Statement statement=connection.createStatement();
-            String sql = "INSERT INTO users (fullname,username, password,role) VALUES ('" +
-                    user.getFullName() + "', '" +
-                    user.getUsername()+ "', '" +
-                    user.getPassword()+ "', '" +
-                    user. + "')";
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        
 
 
     }
@@ -53,5 +43,10 @@ public class UserDao implements Dao<User>{
     @Override
     public void delete(User user) {
 
+    }
+
+    @Override
+    public List<User> getList() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
