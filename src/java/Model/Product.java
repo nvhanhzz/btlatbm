@@ -9,11 +9,11 @@ package Model;
  * @author DELL
  */
 public class Product {
-    private int id;
+    private Integer id;
     private String name, description;
-    private double price;
+    private Double price;
 
-    public Product(int id, String name, String description, double price) {
+    public Product(Integer id, String name, String description, Double price) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -23,7 +23,7 @@ public class Product {
     public Product() {
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -35,11 +35,11 @@ public class Product {
         return description;
     }
 
-    public double getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -51,7 +51,7 @@ public class Product {
         this.description = description;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 }

@@ -9,33 +9,33 @@ package Model;
  * @author DELL
  */
 public class OrderDetail {
-    private int id, numberOfProducts;
+    private Integer id, numberOfProducts;
     private Order order;
     private Product product;
 
     public OrderDetail() {
     }
 
-    public OrderDetail(int id, int numberOfProducts, Order order, Product product) {
+    public OrderDetail(Integer id, Integer numberOfProducts, Order order, Product product) {
         this.id = id;
         this.numberOfProducts = numberOfProducts;
         this.order = order;
         this.product = product;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public int getNumberOfProducts() {
+    public Integer getNumberOfProducts() {
         return numberOfProducts;
     }
 
-    public void setNumberOfProducts(int numberOfProducts) {
+    public void setNumberOfProducts(Integer numberOfProducts) {
         this.numberOfProducts = numberOfProducts;
     }
 
