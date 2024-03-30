@@ -11,7 +11,7 @@ import java.sql.Date;
  * @author DELL
  */
 public class Order {
-    private int id;
+    private Integer id;
     private String email, phone_number, address;
     private Date created_at;
     private User user;
@@ -19,7 +19,7 @@ public class Order {
     public Order() {
     }
 
-    public Order(int id, String email, String phone_number, String address, Date created_at, User user) {
+    public Order(Integer id, String email, String phone_number, String address, Date created_at, User user) {
         this.id = id;
         this.email = email;
         this.phone_number = phone_number;
@@ -28,11 +28,11 @@ public class Order {
         this.user = user;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -75,14 +75,4 @@ public class Order {
     public void setUser(User user) {
         this.user = user;
     }
-//
-//    @Override
-//    public String toString() {
-//        return "Order{" + "id=" + id + ", email=" + email + ", phone_number=" + phone_number + ", address=" + address + ", created_at=" + created_at + ", user=" + user + '}';
-//    }
-//    
-//    public static void main(String[] args) {
-//        Order o = new Order(1, "123@234.com", "0123456789", "hn", new Date(System.currentTimeMillis()), new User(1, "a1", "123", "123", true));
-//        System.out.println(o);
-//    }
 }
